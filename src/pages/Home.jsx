@@ -1,4 +1,4 @@
-import { useState } from 'react'; // Don't forget this import!
+import { useState } from 'react';
 import { useFetch } from '../hooks/useFetch';
 import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
@@ -37,7 +37,7 @@ export default function Home() {
                         <img src={item.image} alt={item.title} className={styles.itemsImage}/>
                         <p><span className={styles.itemsSpan}>Buy Now | </span><strong>${item.price}</strong></p>
                         <h3 className={styles.itemsTitle}>{item.title}</h3>
-                        <p className={styles.itemsDescription}>{item.description.slice(0, 150)}....<Link to={'/'}>Show More</Link></p>
+                        <p className={styles.itemsDescription}>{item.description ? item.description.slice(0, 150) : 'No description available'}....<Link to={'/'}>Show More</Link></p>
                     </li>
                 ))}
             </ul>

@@ -9,12 +9,18 @@
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-}  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+} 
 .itemsImage {
-    max-height: 500px;
+    height: 300px;       
+    width: 100%;
+    object-fit: contain; 
     border: 1px solid lightblue;
     border-radius: 11px;
-    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .itemsSpan {
