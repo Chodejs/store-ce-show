@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom'; // <--- The magic import
-import { devLog } from '../../Cfunc/app';
 import styles from './Nav.module.css';
 
 export default function Nav() {
@@ -9,8 +8,6 @@ export default function Nav() {
         { id: 2, title: 'About', path: '/about' },
         { id: 3, title: 'Contact', path: '/contact' },
     ];
-
-    devLog('Nav Component Mounted');
 
     return (
         <nav className={styles.nav}>

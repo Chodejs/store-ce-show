@@ -1,0 +1,36 @@
+.itemsUl { 
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    }
+
+.itemsLi {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}  
+.itemsImage {
+    max-height: 500px;
+    border: 1px solid lightblue;
+    border-radius: 11px;
+    width: 100%;
+}
+
+.itemsSpan {
+    font-weight: 700;
+    color: green;
+}
+.itemsTitle {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid blue;
+}
+.itemsDescription {
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+
+
+   
